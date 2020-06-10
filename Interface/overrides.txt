@@ -1,0 +1,19 @@
+﻿RES\sound\* > :\BuildSource\sound\*
+RES\Items\* > :\BuildSource\Items\*
+RES\SkillData\* > :\BuildSource\SkillData\*
+RES\Character\* > :\BuildSource\Character\*
+RES\back\* > :\BuildSource\StoryCards\*
+RES\MapPlugin\* > :\BuildSource\MapPlugin\*
+RES\gamemap_res\*>:\BuildSource\gamemap_res\*
+RES\LuaScripts\* > :\BuildSource\LuaScripts\*
+RES\UIRes\* > :\BuildSource\UIRes\*
+ABS\role_models\* > :\BuildSource\role_models\*
+ABS\Skills\* > :\BuildSource\Skills\*
+ABS\battle_effects\* > :\BuildSource\battle_effects\*
+ABS\weapon_models\Prefabs\* > :\BuildSource\weapon_models\Prefabs\*
+ABS\Icons\* > :\BuildSource\Icons\*
+ABS\video\* > :\BuildSource\video\*
+ABS\Audios\* > :\BuildSource\Audios\*
+ABS\map_res\Prefabs\* > :\BuildSource\gamemap_res\MapPrefabs\*
+ABS\GameDatas\* > :\BuildSource\GameDatas\*
+ABS\RoleSpine\* > :\BuildSource\RoleSpine\*
