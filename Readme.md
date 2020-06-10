@@ -14,7 +14,7 @@ RevertNPCName|还原一个角色的名称|游戏中Str数据： SkyToolsRoleID �
 ChangeNPCImg|改变一个角色的立绘，并将其储存|游戏中Str数据： SkyToolsRoleID 角色ID</br>游戏中Str数据： SkyToolsRoleImg 需要替换的人物立绘，如果是捏脸立绘，请将#替换成&|EXCEL命令：</br>SETSTRVAR\*SkyToolsRoleID#角色ID</br>SETSTRVAR\*SkyToolsRoleImg#角色立绘信息</br>RUN_SCRIPT_FUNC\*SkyTools#ChangeNPCImg
 RevertNPCImg|还原一个角色的立绘|游戏中Str数据： SkyToolsRoleID 角色ID|EXCEL命令：</br>SETSTRVAR\*SkyToolsRoleID#角色</br>RUN_SCRIPT_FUNC\*SkyTools#RevertNPCImg
 ChangeNPCModel|改变一个角色的模型，并将其储存</br>模型修改不会即时生效，需要进行一次装备替换或重新入队后生效。|游戏中Str数据： SkyToolsRoleID 角色ID</br>游戏中Str数据： SkyToolsRoleModel 需要替换的人物模型数据，请将#替换成&|EXCEL命令：</br>SETSTRVAR\*SkyToolsRoleID#角色</br>SETSTRVAR\*SkyToolsRoleModel#角色模型信息</br>RUN_SCRIPT_FUNC\*SkyTools#ChangeNPCModel
-RevertNPCModel|还原一个角色的名称|游戏中Str数据： SkyToolsRoleID 角色ID|EXCEL命令：</br>SETSTRVAR\*SkyToolsRoleID#角色</br>RUN_SCRIPT_FUNC\*SkyTools#RevertNPCModel
+RevertNPCModel|还原一个角色的模型|游戏中Str数据： SkyToolsRoleID 角色ID|EXCEL命令：</br>SETSTRVAR\*SkyToolsRoleID#角色</br>RUN_SCRIPT_FUNC\*SkyTools#RevertNPCModel
 DeleteNPCChangeData|删除一个角色的储存信息并还原所有修改|游戏中Str数据： SkyToolsRoleID 角色ID|EXCEL命令：</br>SETSTRVAR\*SkyToolsRoleID#角色</br>RUN_SCRIPT_FUNC\*SkyTools#DeleteNPCChangeData
 DeleteALLNPCChangeData|删除所有角色的储存信息并还原所有修改||EXCEL命令：</br>RUN_SCRIPT_FUNC\*SkyTools#DeleteALLNPCChangeData
 CloseAllGameUI|关闭所有界面||EXCEL命令：</br>RUN_SCRIPT_FUNC\*SkyTools#CloseAllGameUI

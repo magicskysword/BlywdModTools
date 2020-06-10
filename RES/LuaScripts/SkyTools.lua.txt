@@ -139,5 +139,5 @@ end
 RESET_LUAENV*1
 RUN_SCRIPT_FUNC*SkyTools#InitRoleToolList
 RUN_SCRIPT_FUNC*SkyTools#ChangeNPCImg
-RUN_SCRIPT_FUNC*SkyTools#DisposeRoleListNewDay
+RUN_SCRIPT_FUNC*SkyTools#CloseAllGameUI
 ]]

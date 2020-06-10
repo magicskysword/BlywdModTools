@@ -1,1 +1,1 @@
-{"name":"MOD功能扩展插件", "type":"plugin", "desc":"本Mod整合了多项功能接口\n为Mod提供了更多可能\n\n以下是MOD开发者说明：", "tags":"Rules"}
+{"name":"MOD功能扩展工具箱", "type":"plugin", "desc":"本Mod整合了多项功能接口\n为Mod提供了更多可能\n\n以下是MOD开发者说明：\n\n目前提供的接口功能：\n* NPC名称、立绘、模型的修改\n* 关闭所有界面\n\n具体使用方法及函数说明见MOD目录下Readme.md\n或在GitHub上查看：https://github.com/magicskysword/BlywdModTools", "tags":"Rules"}
