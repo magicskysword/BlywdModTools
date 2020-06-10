@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="gamecamp_pojo">
+	<variable name="camp_id" fromCol="阵营ID" type="string" />
+	<variable name="display_name" fromCol="阵营名称" type="string" />
+	<variable name="camp_type" fromCol="阵营类别" type="int" defaultValue="0" />
+	<variable name="camp_leader" fromCol="阵营领袖" type="string" />
+	<variable name="leader_called" fromCol="领袖称呼" type="string" />
+	<variable name="camp_logo" fromCol="势力徽记" type="string" />
+	<variable name="aptitude_to_player" fromCol="与玩家关系" type="string" />
+	<variable name="init_balance_val" fromCol="初始平衡值" type="int" defaultValue="0" />
+	<variable name="init_resources" fromCol="初始资源" type="string" />
+	<variable name="init_stat" fromCol="初始属性" type="string" />
+	<variable name="territory" fromCol="初始领地" type="string" />
+	<variable name="heros" fromCol="初始英雄" type="string" />
+	<variable name="recruit_new_hero" fromCol="是否招募新英雄" type="int" defaultValue="0"/>
+	<variable name="prob_develop" fromCol="发展欲望" type="float" defaultValue="0" />
+	<variable name="prob_recruit" fromCol="招兵欲望" type="float" defaultValue="0" />
+	<variable name="prob_invasion" fromCol="侵略欲望" type="float" defaultValue="0" />
+	<variable name="prob_enlarge" fromCol="扩张欲望" type="float" defaultValue="0" />
+	<variable name="patrol_hour" fromCol="巡逻时间" type="string" defaultValue="" />
+	<variable name="init_active_state" fromCol="初始活跃状态" type="int" defaultValue="0" />
+	<variable name="init_camp_rl_weight" fromCol="初始阵营关系权值" type="int" defaultValue="0" />
+	<variable name="is_hidden" fromCol="是否隐藏" type="int" defaultValue="0" />
+	<variable name="tag" fromCol="标记" type="string"/>
+	<variable name="desc" fromCol="阵营简介" type="string"/>
+</bean>
+
+	
+	

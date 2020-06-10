@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="card_probability_pojo">
+	<variable name="level" fromCol="卡池等级" type="int" />
+	<variable name="soldier_card_probStr" fromCol="士兵卡牌抽取信息" type="string" defaultValue=""/>
+	<variable name="role_card_probStr" fromCol="英雄卡牌抽取信息" type="string" defaultValue=""/>
+</bean>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="initinfo_pojo">
+	<variable name="key" fromCol="KEY" type="string" />
+	<variable name="value" fromCol="VALUE" type="string" />
+</bean>
+
+	
+	

@@ -1,0 +1,195 @@
+GameCoreHelper = CS.GameCoreHelper
+---* 方法简化
+function RunCmd(cmdStr, contextArgs)
+    local _contextArgs = contextArgs
+    local _cmdStr = cmdStr:gsub("^%s*(.-)%s*$", "%1"):gsub("\t", "")
+    GameCoreHelper.RunCmd(_cmdStr, _contextArgs)
+end
+SetIntVar = GameCoreHelper.SetIntVar
+GetIntVar = GameCoreHelper.GetIntVar
+SetStrVar = GameCoreHelper.SetStrVar
+GetStrVar = GameCoreHelper.GetStrVar
+
+---@class tools
+tools = {}
+
+---* 不能在EXCEL里直接调用
+---* 用splite_txt分割str，返回一个含字符串的表
+---@param str string
+---@param splite_txt string
+---@return table
+function tools.string_split(str, splite_txt)
+    local str_table = {}
+    while (str:find(splite_txt)) do
+        table.insert(str_table, str:sub(1, str:find(splite_txt) - 1))
+        str = str:sub(str:find(splite_txt) + splite_txt:len(), str:len())
+    end
+    table.insert(str_table, str)
+    if str == "" then
+        return {}
+    else
+        return str_table
+    end
+end
+
+---* 不能在EXCEL里直接调用
+---* 批量按表替换string里的内容
+---* 表的格式为{pattren1 = replace1,pattren2 = replace2,...}
+---@param str string
+---@param gsub_list table
+---@return string
+function tools.string_gsub_list(str, gsub_list)
+    local init_string = str
+    for key, value in pairs(gsub_list) do
+        init_string = init_string:gsub(key, value)
+    end
+    return init_string
+end
+
+---* 不能在EXCEL里直接调用
+---* 序列化Table
+---@param obj table
+---@return string
+function tools.serialize(obj)
+    local lua = ""
+    local t = type(obj)
+    if t == "number" then
+        lua = lua .. obj
+    elseif t == "boolean" then
+        lua = lua .. tostring(obj)
+    elseif t == "string" then
+        lua = lua .. string.format("%q", obj)
+    elseif t == "table" then
+        lua = lua .. "{\n"
+        for k, v in pairs(obj) do
+            lua = lua .. "[" .. tools.serialize(k) .. "]=" .. tools.serialize(v) .. ",\n"
+        end
+        local metatable = getmetatable(obj)
+        if metatable ~= nil and type(metatable.__index) == "table" then
+            for k, v in pairs(metatable.__index) do
+                lua = lua .. "[" .. tools.serialize(k) .. "]=" .. tools.serialize(v) .. ",\n"
+            end
+        end
+        lua = lua .. "}"
+    else
+        return "nil"
+    end
+    return lua
+end
+
+---* 不能在EXCEL里直接调用
+---* 反序列化Table
+---@param lua string
+---@return table
+function tools.unserialize(lua)
+    local t = type(lua)
+    if t == "nil" or lua == "" then
+        return nil
+    elseif t == "number" or t == "string" or t == "boolean" then
+        lua = tostring(lua)
+    else
+        error("can not unserialize a " .. t .. " type.")
+    end
+    lua = "return " .. lua
+    local func = load(lua)
+    if func == nil then
+        return nil
+    end
+    return func()
+end
+
+---@class RoleTool
+RoleTool = {}
+
+---@class RoleToolList
+RoleToolList = {
+    instance = {}
+}
+
+---* 不能在EXCEL里直接调用
+---* 改变一个角色的立绘
+---@param RoleID string
+---@param RoleImgString string
+function RoleTool.ChangeRoleHeadAvata(self, RoleImgString)
+    local tagRole = self.instance
+    tagRole.HeadAvata = RoleImgString
+    self.HeadAvata = RoleImgString
+end
+
+---* 不能在EXCEL里直接调用
+---* 改变一个角色的名称
+function RoleTool.ChangeRoleName(self, RoleName)
+    local tagRole = self.instance
+    tagRole.Name = RoleName
+    self.Name = RoleName
+end
+
+---* 不能在EXCEL里直接调用
+---* 改变一个角色的模型
+function RoleTool.ChangeRoleModel(self, RoleModelInfo)
+    local tagRole = self.instance
+    tagRole.ModelInfo = RoleModelInfo
+    self.ModelInfo = RoleModelInfo
+end
+
+---* 不能在EXCEL里直接调用
+---* 初始化一个RoleTool，如果有保存的数据则读取。
+---@param RoleID string
+---@param RoleSaveData table
+---@return RoleTool
+function InitRoleData(RoleID, RoleSaveData)
+    local RoleData = {}
+    RoleData.instance = GameCoreHelper.GetRole(RoleID)
+    local SaveData = RoleSaveData or {}
+    if RoleData.instance then
+        for key, value in pairs(RoleTool) do
+            RoleData[key] = value
+        end
+        RoleData.RawName = SaveData.RawName or RoleData.instance.Name
+        RoleData.Name = SaveData.Name or RoleData.RawName
+        RoleData.instance.Name = RoleData.Name
+
+        RoleData.RawHeadAvata = SaveData.RawHeadAvata or RoleData.instance.HeadAvata
+        RoleData.HeadAvata = SaveData.HeadAvata or RoleData.RawHeadAvata
+        RoleData.instance.HeadAvata = RoleData.HeadAvata
+
+        RoleData.RawModelInfo = SaveData.RawModelInfo or RoleData.instance.ModelInfo
+        RoleData.ModelInfo = SaveData.ModelInfo or RoleData.RawModelInfo
+        RoleData.instance.ModelInfo = RoleData.ModelInfo
+        RoleToolList.instance[RoleID] = RoleData
+        return RoleData
+    else
+        return nil
+    end
+end
+
+---* 不能在EXCEL里直接调用
+---* 获取人物信息表
+---@param RoleID string
+---@return RoleTool
+function GetRoleData(RoleID)
+    local RoleData
+    if RoleToolList.instance[RoleID] then
+        RoleData = RoleToolList.instance[RoleID]
+    else
+        RoleData = InitRoleData(RoleID)
+    end
+    return RoleData
+end
+
+---* 不能在EXCEL里直接调用
+---* 删除一个角色的信息
+---@param self RoleToolList
+---@param RoleID string
+function RoleToolList.DeleteRoleData(self, RoleID)
+    if RoleToolList.instance[RoleID] then
+        RoleToolList.instance[RoleID] = nil
+    end
+end
+
+---* 不能在EXCEL里直接调用
+---* 删除人物信息表里储存的所有信息
+---@param self RoleToolList
+function RoleToolList.Clear(self)
+    RoleToolList.instance = {}
+end

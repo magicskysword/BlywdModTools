@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="rolemodel_act_pojo">
+	<variable name="act_id" fromCol="动作ID" type="string" />
+	<variable name="file_name" fromCol="文件名" type="string" />
+	<variable name="fly_act" fromCol="飞行动作" type="string" />
+	<variable name="act_type" fromCol="动作类型" type="int"  defaultValue="-1"/>
+	<variable name="extra_radius" fromCol="附加半径" type="float" />
+	<variable name="run_line" fromCol="跑走速度线" type="float" />
+	<variable name="act_pos_info" fromCol="发射点偏移" type="string" />
+	<variable name="act_inj_src" fromCol="受击动作" type="string" />
+	<variable name="act_block_src" fromCol="格挡动作" type="string" />
+	<variable name="act_dodge_src" fromCol="闪避动作" type="string" />
+	<variable name="melee_atk_info" fromCol="近战攻击动作表" type="string" />
+	<variable name="remote_atk_info" fromCol="远程攻击动作表" type="string" />
+	<variable name="act_list_info" fromCol="技能动作表" type="string" />
+	<variable name="str_act_victory" fromCol="庆祝动作" type="string" />
+	<variable name="str_act_deaddown" fromCol="死亡动作" type="string" />
+</bean>
+
+	
+	

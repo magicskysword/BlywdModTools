@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<bean name="audio_sub_item_pojo">
+	<variable name="audioClipPath" fromCol="音频资源路径" type="string" />
+	<variable name="category" fromCol="所属分类" type="string" />
+	<variable name="parentItemId" fromCol="所属项目" type="string" />
+	<variable name="volume" fromCol="音量" type="float" />
+	<variable name="randomVolume" fromCol="随机音量" type="float" />
+	<variable name="pitchShift" fromCol="音调" type="float" />
+	<variable name="randomPitch" fromCol="随机音调" type="float" />
+	<variable name="delay" fromCol="延迟" type="float" />
+	<variable name="randomDelay" fromCol="随机延迟" type="float" />
+	<variable name="probability" fromCol="权重" type="float" />
+	<variable name="pan2d" fromCol="左右声道" type="float" />
+	<variable name="fadeIn" fromCol="淡入时长" type="float" />
+	<variable name="fadeOut" fromCol="淡出时长" type="float" />
+	<variable name="startAt" fromCol="开始时间" type="float" />
+	<variable name="stopAt" fromCol="结束时间" type="float" />
+	<variable name="disableOtherSubitems" fromCol="是否禁用其他音源" type="int" />
+	<variable name="randomStartPosition" fromCol="是否随机开始时间" type="int" />
+</bean>
+

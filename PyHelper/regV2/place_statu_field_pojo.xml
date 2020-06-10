@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="place_statu_field_pojo">
+	<variable name="field_code" fromCol="代码" type="string" />
+	<variable name="field_name" fromCol="字段名称" type="string" />
+	<variable name="sort_order" fromCol="排序权值" type="int" defaultValue="0"/>
+	<variable name="is_markfield" fromCol="标识属性" type="int" defaultValue="0"/>
+	<variable name="is_hide" fromCol="隐藏" type="int" defaultValue="0"/>
+	<variable name="ext_describ" fromCol="额外描述" type="string" />
+</bean>
+
+	
+	

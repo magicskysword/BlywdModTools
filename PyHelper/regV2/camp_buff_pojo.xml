@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="camp_buff_pojo">
+	<variable name="buff_id" fromCol="ID" type="string" />
+	<variable name="buff_name" fromCol="BUFF名称" type="string" />
+	<variable name="buff_class" fromCol="分类" type="string" />
+	<variable name="buff_info" fromCol="BUFF描述" type="string" />
+	<variable name="buff_icon" fromCol="BUFF图标" type="string" />
+	<variable name="keep_time" fromCol="默认持续时间" type="float" defaultValue="0" />
+	<variable name="buff_add" fromCol="BUFF效果" type="string" />
+</bean>
+
+	
+	

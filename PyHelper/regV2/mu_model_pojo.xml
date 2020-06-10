@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="mu_model_pojo">
+	<variable name="model_id" fromCol="模型ID" type="string" />
+	<variable name="model_prefab" fromCol="预置模型文件" type="string" />
+	<variable name="radius" fromCol="半径" type="float" />
+	<variable name="height" fromCol="高度" type="float" />
+	<variable name="is_color" fromCol="上色层" type="int" defaultValue="0" />
+	<variable name="model_scale" fromCol="比例" type="float" />
+	<variable name="ac_offset_str" fromCol="中心偏移" type="string" />
+	<variable name="str_act_idle" fromCol="待机动作" type="string" />
+	<variable name="str_act_move" fromCol="移动动作" type="string" />
+</bean>
+
+	
+	

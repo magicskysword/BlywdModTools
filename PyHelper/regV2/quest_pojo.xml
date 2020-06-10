@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="quest_pojo">
+	<variable name="quest_id" fromCol="任务ID" type="string" />
+	<variable name="display_name" fromCol="显示名称" type="string" />
+	<variable name="cover_quest" fromCol="覆盖任务" type="string" />
+	<variable name="quest_group" fromCol="系列名" type="string" />
+	<variable name="quest_condition" fromCol="前置条件" type="string" />
+	<variable name="quest_creater" fromCol="接收目标" type="string" />
+	<variable name="quest_target" fromCol="任务子项" type="string" />
+	<variable name="quest_finish" fromCol="完成目标" type="string" />
+	<variable name="quest_ask_info" fromCol="可打听选项" type="string" />
+	<variable name="quest_describ" fromCol="任务描述" type="string" />
+	<variable name="day_limit" fromCol="时限" type="int" defaultValue="-1"/>
+	<variable name="auto_reward" fromCol="到时间自动领奖" type="int" defaultValue="1"/>
+	<variable name="quest_start_cmd" fromCol="任务开始执行脚本" type="string"/>
+	<variable name="reward_list" fromCol="任务奖励" type="string" />
+	<variable name="reward_cmd" fromCol="奖励脚本" type="string" />
+	<variable name="overtime_punish_list" fromCol="超时惩罚" type="string" />
+	<variable name="overtime_cmd" fromCol="超时脚本" type="string" />
+	<variable name="loc_info" fromCol="完成追踪" type="string" />
+</bean>
+
+	
+	

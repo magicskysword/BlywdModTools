@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="map_building_spot">
+	<variable name="SpotTypeID" fromCol="建筑点类型" type="string" />
+	<variable name="ProjectTag" fromCol="项目标签" type="string" />
+	<variable name="DescInfo" fromCol="描述" type="string" />
+	<variable name="BonusInfo" fromCol="奖励效果" type="string" />
+</bean>
+
+	
+	

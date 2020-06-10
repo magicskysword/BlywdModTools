@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="character">
+  <variable name="id" fromCol="ID" type="string" />
+  <variable name="w" fromCol="长" type="float" />
+	<variable name="h" fromCol="宽" type="float" />
+	<variable name="x" fromCol="X" type="float" />
+	<variable name="y" fromCol="Y" type="float" />
+	<variable name="minihead" fromCol="小头像" type="string" />
+</bean>

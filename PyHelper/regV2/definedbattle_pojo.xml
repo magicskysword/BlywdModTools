@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="definedbattle_pojo">
+	<variable name="battle_id" fromCol="战斗ID" type="string" />
+	<variable name="battle_mode" fromCol="模式" type="string" />
+	<variable name="enemy_roles" fromCol="参战人物" type="string" />
+	<variable name="enemy_units" fromCol="参战单位" type="string" />
+	<variable name="bg_map" fromCol="战场地图" type="string" />
+	<variable name="is_seige_battle" fromCol="是否攻城战" type="int" />
+	<variable name="is_side_b" fromCol="是否守方" type="int" />
+	<variable name="limit_infos" fromCol="限制条件" type="string" />
+	<variable name="extra_captures" fromCol="额外战利品" type="string" />
+	<variable name="def_weather" fromCol="定制天气" type="string" />
+</bean>
+
+	
+	

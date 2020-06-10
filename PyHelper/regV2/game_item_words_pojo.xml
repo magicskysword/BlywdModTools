@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="game_item_words_pojo">
+	<variable name="word_id" fromCol="词条ID" type="string" />
+	<variable name="word_name" fromCol="显示词缀" type="string" />
+	<variable name="is_cover_name" fromCol="覆盖名称" type="int" defaultValue="0"/>
+	<variable name="quality" fromCol="词条品质" type="int" defaultValue="0"/>
+	<variable name="min_item_level" fromCol="最低物等" type="int" defaultValue="0"/>
+	<variable name="max_item_level" fromCol="最高物等" type="int" defaultValue="0"/>
+	<variable name="equip_type" fromCol="限定装备类型" type="int" defaultValue="0"/>
+	<variable name="sub_type_list" fromCol="限定子类型表" type="string" />
+	<variable name="bind_item" fromCol="限定道具ID" type="string" />
+	<variable name="manual_gen" fromCol="指定方式生成" type="int" defaultValue="0"/>
+	<variable name="tagValue" fromCol="TAG" type="string"/>
+	<variable name="word_prob" fromCol="概率权值" type="float" defaultValue="0"/>
+	<variable name="cover_weapon_speed" fromCol="覆盖武器速度" type="float" defaultValue="0"/>
+	<variable name="add_require" fromCol="附加需求" type="string" />
+	<variable name="word_effects" fromCol="词条效果" type="string" />
+	<variable name="add_price" fromCol="附加价格" type="int" defaultValue="0"/>
+	<variable name="cover_tex_info" fromCol="覆盖模型" type="string" />
+	<variable name="cover_eft" fromCol="覆盖特效" type="string" />
+	<variable name="cover_describ" fromCol="覆盖描述" type="string" />
+</bean>
+
+	
+	

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="event_trigger_pojo">
+	<variable name="key" fromCol="触发器ID" type="string" />
+	<variable name="trigger_type" fromCol="触发类型" type="string" />
+	<variable name="obj_type" fromCol="触发对象类型" type="string" />
+	<variable name="obj_tag" fromCol="触发对象ID" type="string" />
+	<variable name="trig_priority" fromCol="优先级" type="int" defaultValue="0" />
+	<variable name="init_state" fromCol="初始状态" type="int" defaultValue="0" />
+	<variable name="tip_type" fromCol="提示" type="int" defaultValue="0" />
+	<variable name="hint_conditions" fromCol="提示条件" type="string" />
+	<variable name="condition_group" fromCol="触发条件表达式组" type="string" />
+	<variable name="bind_event" fromCol="触发事件ID" type="string" />
+	<variable name="bind_option" fromCol="绑定选项" type="string" />
+</bean>
+
+	
+	

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="sp_distribute_pojo">
+	<variable name="template_id" fromCol="ID" type="string" />
+	<variable name="distribute_info" fromCol="加点方案" type="string" />
+</bean>
+
+	
+	

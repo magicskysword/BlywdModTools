@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="rolemodel_pojo">
+	<variable name="model_id" fromCol="模型ID" type="string" />
+	<variable name="is_dynamic" fromCol="动态模型" type="int" defaultValue="0"/>
+	<variable name="model_sex" fromCol="适配性别" type="int" defaultValue="0"/>
+	<variable name="enable_for_player" fromCol="主角可选" type="int" defaultValue="0"/>
+	<variable name="file_name" fromCol="文件名" type="string" />
+	<variable name="limit_act" fromCol="专用动作" type="string" />
+	<variable name="model_radius" fromCol="模型半径" type="float" defaultValue="0" />
+	<variable name="dir_type" fromCol="方向类型" type="int" defaultValue="0" />
+	<variable name="model_height" fromCol="模型高度" type="float" defaultValue="0" />
+	<variable name="model_mass" fromCol="质量" type="float" defaultValue="0"/>
+	<variable name="offset_z" fromCol="悬浮高度" type="float" defaultValue="0" />
+	<variable name="fixed_partmodel" fromCol="底座模型" type="string" />
+	<variable name="ignore_collision" fromCol="无视碰撞" type="int" defaultValue="0" />
+	<variable name="is_humanoid" fromCol="标准人形" type="int" defaultValue="0" />
+	<variable name="close_move_effect" fromCol="关闭移动特效" type="int" defaultValue="0" />
+	<variable name="str_sound_dic" fromCol="音效字典" type="string" />
+	<variable name="tags_dic" fromCol="TAG" type="string" />
+</bean>
+
+	
+	

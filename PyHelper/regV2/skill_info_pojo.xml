@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="skill_info_pojo">
+	<variable name="skill_id" fromCol="ID" type="string" />
+	<variable name="skill_name" fromCol="技能名称" type="string" />
+	<variable name="card_slot" fromCol="对应插槽" type="string" />
+	<variable name="skill_type" fromCol="被动" type="int" defaultValue="0"/>
+	<variable name="level_info" fromCol="等级信息" type="string"/>
+	<variable name="skill_info" fromCol="技能描述" type="string" />
+	<variable name="skill_icon" fromCol="技能图标" type="string" />
+	<variable name="skill_series" fromCol="技能系" type="string" />
+	<variable name="multiple_by" fromCol="增幅系数" type="string" />
+	<variable name="skill_page" fromCol="技能页" type="string" />
+	<variable name="mp_cost" fromCol="气力消耗" type="int" defaultValue="0" />
+	<variable name="cast_time" fromCol="吟唱时间" type="float" defaultValue="0" />
+	<variable name="skill_class" fromCol="技能分类" type="int" defaultValue="0"/>
+	<variable name="target_type" fromCol="目标类型" type="int" defaultValue="0"/>
+	<variable name="target_args" fromCol="目标查询参数" type="string" />
+	<variable name="sel_arg" fromCol="选择参数" type="float" defaultValue="0" />
+	<variable name="cd_time" fromCol="冷却时间" type="float" defaultValue="0" />
+	<variable name="global_cd" fromCol="公共CD" type="float" defaultValue="0" />
+	<variable name="cast_range" fromCol="施放距离" type="float" defaultValue="0" />
+	<variable name="casting_act" fromCol="吟唱动作" type="string" />
+	<variable name="casting_eft" fromCol="吟唱特效" type="string" />
+	<variable name="cast_out_act" fromCol="施放动作" type="string" />
+	<variable name="weapon_limit" fromCol="限定武器类型" type="string" />
+	<variable name="add_status" fromCol="被动增加属性" type="string" />
+	<variable name="check_condition" fromCol="成功判断条件表达式" type="string" />
+	<variable name="start_casting_cmd" fromCol="开始吟唱时命令" type="string" />
+	<variable name="cast_cmd" fromCol="发动成功时命令" type="string" />
+	<variable name="failed_cmd" fromCol="发动失败时命令" type="string" />
+	<variable name="hittag_cmd" fromCol="命中时命令" type="string" />
+</bean>
+
+	
+	

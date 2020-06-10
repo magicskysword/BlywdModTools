@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<bean name="audio_item_pojo">
+	<variable name="itemId" fromCol="项目ID" type="string" />
+	<variable name="category" fromCol="所属分类" type="string" />
+	<variable name="volume" fromCol="音量" type="float" />
+	<variable name="randomVolume" fromCol="随机音量" type="float" />
+	<variable name="pitchShift" fromCol="音调" type="float" />
+	<variable name="randomPitch" fromCol="随机音调" type="float" />
+	<variable name="delay" fromCol="延迟" type="float" />
+	<variable name="randomDelay" fromCol="随机延迟" type="float" />
+	<variable name="minTimeBetweenPlay" fromCol="连续播放最小时间间隔" type="float" />
+	<variable name="maxInstanceCount" fromCol="最大同时播放数量" type="int" />
+	<variable name="stopWhenSceneLoads" fromCol="自动停止" type="int" />
+	<variable name="loopMode" fromCol="循环模式" type="int" />
+	<variable name="pickSubitemMode" fromCol="播放模式" type="int" />
+</bean>

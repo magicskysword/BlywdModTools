@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="local_product_pojo">
+	<variable name="id" fromCol="ID" type="string" />
+	<variable name="item_id" fromCol="对应道具ID" type="string" />
+	<variable name="product_range" fromCol="出产范围" type="int" defaultValue="2000"/>
+</bean>

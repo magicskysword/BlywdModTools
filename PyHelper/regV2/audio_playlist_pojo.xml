@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<bean name="audio_playlist_pojo">
+	<variable name="playlistId" fromCol="播放列表ID" type="string" />
+	<variable name="audioInfo" fromCol="调用列表" type="string" />
+</bean>

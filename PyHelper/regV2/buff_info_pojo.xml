@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="buff_info_pojo">
+	<variable name="buff_id" fromCol="ID" type="string" />
+	<variable name="buff_name" fromCol="BUFF名称" type="string" />
+	<variable name="buff_type" fromCol="类型" type="int" defaultValue="0"/>
+	<variable name="buff_info" fromCol="BUFF描述" type="string" />
+	<variable name="buff_icon" fromCol="BUFF图标" type="string" />
+	<variable name="keep_time" fromCol="默认持续时间" type="float" defaultValue="0" />
+	<variable name="tick_time" fromCol="结算间隔" type="float" defaultValue="0" />
+	<variable name="buff_class" fromCol="BUFF分类" type="int" defaultValue="0"/>
+	<variable name="buff_overlay" fromCol="叠加层数" type="int" defaultValue="0"/>
+	<variable name="buff_effect" fromCol="BUFF特效" type="string" />
+	<variable name="model_eft" fromCol="模型特效" type="string" />
+	<variable name="buff_add" fromCol="BUFF效果" type="string" />
+	<variable name="val_formation" fromCol="持续效果数值表达式" type="string" />
+	<variable name="add_cmd" fromCol="BUFF叠加时执行命令" type="string" />
+	<variable name="end_cmd" fromCol="BUFF移除时执行命令" type="string" />
+	<variable name="weaken_info" fromCol="衰减影响" type="string" />
+</bean>
+
+	
+	

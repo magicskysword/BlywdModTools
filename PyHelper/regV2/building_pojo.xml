@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="building_pojo">
+	<variable name="building_id" fromCol="设施ID" type="string" />
+	<variable name="display_name" fromCol="显示名称" type="string" />
+	<variable name="building_type" fromCol="类型" type="string" />
+	<variable name="level" fromCol="等级" type="int" defaultValue="1" />
+	<variable name="pos_type" fromCol="位置类型" type="int" />
+	<variable name="sort_index" fromCol="排序" type="int" />
+	<variable name="add_stat" fromCol="地点效果" type="string" />
+	<variable name="add_camp_stat" fromCol="势力效果" type="string" />
+	<variable name="recruit_info" fromCol="招募信息" type="string" />
+	<variable name="guard_info" fromCol="守城信息" type="string" />
+	<variable name="bind_info" fromCol="绑定信息" type="string" />
+	<variable name="display_cdt" fromCol="显示条件" type="string" />
+	<variable name="discrib_info" fromCol="设施效果描述" type="string" />
+	<variable name="map_model" fromCol="地图外观" type="string" />
+	<variable name="player_remove_require" fromCol="玩家主动移除条件" type="string" />
+	<variable name="player_remove_require_hint" fromCol="玩家主动移除条件提示" type="string" />
+	<variable name="remove_cmd" fromCol="被摧毁执行脚本" type="string"/>
+	<variable name="tags_info" fromCol="Tags" type="string" />
+</bean>
+
+	
+	

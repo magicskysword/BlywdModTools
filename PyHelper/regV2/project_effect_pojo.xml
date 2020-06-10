@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="project_effect_pojo">
+	<variable name="id" fromCol="项目ID" type="string" />
+	<variable name="showPlaceName" fromCol="显示地点名称" type="string" />
+	<variable name="showProjectName" fromCol="显示项目名称" type="string" />
+	<variable name="projectTag" fromCol="项目标签" type="string" />
+	<variable name="project_type" fromCol="项目类型" type="int" defaultValue="0"/>
+	<variable name="sort_index" fromCol="排序索引" type="int" defaultValue="0"/>
+	<variable name="last_days" fromCol="持续天数" type="int" defaultValue="10"/>
+	<variable name="ai_weight" fromCol="AI概率权值" type="int" defaultValue="10"/>
+	<variable name="resource_require" fromCol="所需资源" type="string" />
+	<variable name="enable_condition" fromCol="可用条件" type="string" />
+	<variable name="profit_desc" fromCol="收益描述" type="string"/>
+	<variable name="start_cmd" fromCol="开始执行脚本" type="string"/>
+	<variable name="cancel_cmd" fromCol="取消执行脚本" type="string"/>
+	<variable name="daily_cmd" fromCol="每天执行脚本" type="string"/>
+	<variable name="bind_info" fromCol="绑定项目信息" type="string"/>
+	<variable name="final_cmd" fromCol="达成执行脚本" type="string"/>
+</bean>

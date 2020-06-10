@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<bean name="armor_effect_pojo">
+	<variable name="weapon_type" fromCol="攻击类型" type="string" />
+	<variable name="attack_type_name" fromCol="攻击类型名称" type="string" />
+	<variable name="against_light" fromCol="轻甲伤害" type="int" defaultValue= "0"/>
+	<variable name="against_middle" fromCol="中甲伤害" type="int" defaultValue= "0"/>
+	<variable name="against_heavy" fromCol="重甲伤害" type="int" defaultValue= "0"/>
+	<variable name="against_lightKnight" fromCol="轻骑兵甲伤害" type="int" defaultValue= "0"/>
+	<variable name="against_heavyKnight" fromCol="重骑兵甲伤害" type="int" defaultValue= "0"/>
+	<variable name="against_building" fromCol="城甲伤害" type="int" defaultValue= "0"/>
+</bean>
+

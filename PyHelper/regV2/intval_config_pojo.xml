@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="intval_config_pojo">
+	<variable name="key" fromCol="选项ID" type="string" />
+	<variable name="config_type" fromCol="配置类型" type="int" defaultValue="0" />
+	<variable name="display_name" fromCol="显示名称" type="string" />
+	<variable name="intval_key" fromCol="自定义整形字段" type="string" />
+	<variable name="option_info" fromCol="选项配置" type="string" />
+	<variable name="desc_info" fromCol="说明信息" type="string" />
+	<variable name="res_cmd" fromCol="结果执行脚本" type="string" />
+</bean>
+
+	
+	

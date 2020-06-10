@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bean name="terrain_info_pojo">
+	<variable name="index_key" fromCol="索引值" type="string" />
+	<variable name="move_affect" fromCol="移速加成" type="float" defaultValue= "0" />
+	<variable name="tag_limit" fromCol="对象限制" type="int" defaultValue= "0" />
+	<variable name="battle_field" fromCol="对应战场" type="string" />
+	<variable name="walk_sound" fromCol="脚步声" type="string" />
+</bean>
+

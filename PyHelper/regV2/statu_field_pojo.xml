@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="statu_field_pojo">
+	<variable name="field_code" fromCol="代码" type="string" />
+	<variable name="field_name" fromCol="字段名称" type="string" />
+	<variable name="field_format_name" fromCol="字段格式名称" type="string" />
+	<variable name="field_type" fromCol="字段类型" type="int" defaultValue="0"/>
+	<variable name="sort_order" fromCol="排序权值" type="int" defaultValue="0"/>
+	<variable name="is_hide" fromCol="面板隐藏" type="int" defaultValue="0"/>
+	<variable name="round_pct_change" fromCol="周目成长百分比" type="int" defaultValue="0"/>
+	<variable name="ext_describ" fromCol="额外描述" type="string" />
+	<variable name="weapon_limit" fromCol="限定武器" type="string" />
+	<variable name="trig_type" fromCol="触发方式" type="string" />
+	<variable name="trig_conditions" fromCol="触发条件" type="string" />
+	<variable name="tag_args" fromCol="对象参数" type="string" />
+	<variable name="trig_cmd" fromCol="触发时命令" type="string" />
+</bean>

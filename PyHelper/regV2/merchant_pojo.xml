@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="merchant_pojo">
+	<variable name="store_id" fromCol="商店ID" type="string" />
+	<variable name="store_name" fromCol="商店名称" type="string" />
+	<variable name="type" fromCol="类型" type="string" />
+	<variable name="bind_place" fromCol="绑定地点" type="string" />
+	<variable name="bind_npc" fromCol="绑定NPC" type="string" />
+	<variable name="priority" fromCol="优先级" type="int" defaultValue="0" />
+	<variable name="init_money" fromCol="基础金额" type="int" defaultValue="0" />
+	<variable name="revenue_min" fromCol="最小收益" type="int" defaultValue="0" />
+	<variable name="revenue_max" fromCol="最大收益" type="int" defaultValue="0" />
+	<variable name="sell_rate" fromCol="出售比" type="float" defaultValue="1" />
+	<variable name="buy_rate" fromCol="回收比" type="float" defaultValue="1" />
+	<variable name="goods_list" fromCol="固定售卖物品" type="string" />
+	<variable name="ex_goods_list" fromCol="条件开放商品表" type="string" />
+</bean>
+
+	
+	

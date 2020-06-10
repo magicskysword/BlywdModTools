@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="units_generator_pojo">
+	<variable name="info_id" fromCol="索引ID" type="string" />
+	<variable name="adapt_type" fromCol="类型" type="int" />
+	<variable name="condition" fromCol="适配条件" type="string" />
+	<variable name="priority" fromCol="优先级" type="int" />
+	<variable name="roles_info" fromCol="适配人物信息" type="string" />
+	<variable name="units_info" fromCol="适配单位信息" type="string" />
+</bean>
+
+	
+	

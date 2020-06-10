@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="storyevent_pojo">
+	<variable name="key" fromCol="剧情事件ID" type="string" />
+	<variable fromCol="命令内容" split="\n" type="collection" >
+		<bean name="cmd_line" >
+			<variable name="val" fromIndex="0" type="string" />
+		</bean>
+	</variable>
+	<variable fromCol="结果" split="\n" type="collection" >
+		<bean name="result_line" >
+			<variable name="val" fromIndex="0" type="string" />
+		</bean>
+	</variable>
+</bean>
+
+	
+	

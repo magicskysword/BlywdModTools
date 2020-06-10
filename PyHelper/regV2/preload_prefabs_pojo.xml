@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="preload_prefabs_pojo">
+	<variable name="key" fromCol="索引ID" type="string" />
+	<variable name="path" fromCol="预制体路径" type="string" />
+</bean>
+
+	
+	

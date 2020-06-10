@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="random_quest_pojo">
+	<variable name="random_quest_id" fromCol="随机任务ID" type="string" />
+	<variable name="quest_id" fromCol="任务ID" type="string" />
+	<variable name="creater" fromCol="发布者" type="string" />
+	<variable name="argvs" fromCol="随机参数" type="string" />
+	<variable name="reftresh_condition" fromCol="任务刷新限制" type="string" />
+	<variable name="time_limit" fromCol="任务存在时间" type="string" />
+	<variable name="cd_time" fromCol="任务CD时间" type="string" />
+	<variable name="event_id" fromCol="开始事件ID" type="string" />
+	<variable name="finish_event_id" fromCol="结束事件ID" type="string" />
+	<variable name="quest_tag" fromCol="任务参数" type="string" />
+</bean>
+
+	
+	

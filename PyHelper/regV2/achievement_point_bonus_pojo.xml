@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<bean name="achievement_point_bonus_pojo">
+	<variable name="count" fromCol="奖励次数" type="int" />
+	<variable name="bonus1" fromCol="奖励1" type="string" />
+	<variable name="desc1" fromCol="名称1" type="string" />
+	<variable name="bonus2" fromCol="奖励2" type="string" />
+	<variable name="desc2" fromCol="名称2" type="string" />
+	<variable name="bonus3" fromCol="奖励3" type="string" />
+	<variable name="desc3" fromCol="名称3" type="string" />
+</bean>
+

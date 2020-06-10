@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="global_loot_pojo">
+	<variable name="loot_id" fromCol="掉落ID" type="string" />
+	<variable name="prob_weight" fromCol="概率权值" type="float" />
+	<variable name="in_querylist" fromCol="参与掉落" type="int" />
+	<variable name="from_lv" fromCol="自" type="int" />
+	<variable name="to_lv" fromCol="至" type="int" />
+	<variable name="query_tag1" fromCol="Tag1" type="string" />
+	<variable name="query_tag2" fromCol="Tag2" type="string" />
+	<variable name="query_tag3" fromCol="Tag3" type="string" />
+	<variable name="loot_items" fromCol="目标物品表" type="string" />
+</bean>
+
+	
+	

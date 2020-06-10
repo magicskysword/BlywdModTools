@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="text_explore_event_pojo">
+	<variable name="id" fromCol="ID" type="string"/>
+	<variable name="showname" fromCol="名称" type="string"/>
+	<variable name="inRandomPool" fromCol="固定加入随机池" type="int" defaultValue="0"/>
+	<variable name="once" fromCol="仅出现一次" type="int" defaultValue="0"/>
+	<variable name="canNotSkip" fromCol="不可略过" type="int" defaultValue="0"/>
+	<variable name="cmdDesc" fromCol="指令描述" type="string"/>
+	<variable name="cmd" fromCol="指令" type="string"/>
+</bean>

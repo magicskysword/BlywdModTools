@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="quest_group_pojo">
+	<variable name="group_id" fromCol="系列ID" type="string" />
+	<variable name="display_name" fromCol="显示名称" type="string" />
+	<variable name="group_describ" fromCol="系列描述" type="string" />
+	<variable name="reward_list" fromCol="完成奖励" type="string" />
+</bean>
+
+	
+	

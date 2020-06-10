@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="game_item_synth_pojo">
+	<variable name="id" fromCol="ID" type="string" />
+	<variable name="main_class" fromCol="所属主类" type="string" />
+	<variable name="sub_class" fromCol="所属子类" type="string" />
+	<variable name="sort_index" fromCol="排序索引" type="int" defaultValue="0"/>
+	<variable name="display_name" fromCol="显示名称" type="string" />
+	<variable name="def_state" fromCol="默认开启" type="int" defaultValue="0"/>
+	<variable name="target_item" fromCol="合成目标" type="string" />
+	<variable name="alt_info" fromCol="显示替代" type="string" />
+	<variable name="target_describ" fromCol="描述信息" type="string" />
+	<variable name="mat_infos" fromCol="配方" type="string" />
+	<variable name="condition_str" fromCol="合成所需条件" type="string" />
+	<variable name="condition_info" fromCol="合成所需条件描述" type="string" />
+</bean>

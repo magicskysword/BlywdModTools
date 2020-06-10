@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="bazzar_pojo">
+	<variable name="id" fromCol="集市ID" type="string" />
+	<variable name="name" fromCol="名称" type="string" />
+	<variable name="no_broadcast" fromCol="隐藏播报信息" type="int" defaultValue="0"/>
+	<variable name="init_info" fromCol="初始化信息" type="string" />
+	<variable name="merchant_info" fromCol="商品信息表" type="string" />
+	<variable name="dummy_info" fromCol="假人信息表" type="string" />
+</bean>

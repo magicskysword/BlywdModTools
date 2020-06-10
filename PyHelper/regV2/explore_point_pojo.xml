@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="explore_point_pojo">
+	<variable name="id" fromCol="事件ID" type="string" />
+	<variable name="point" fromCol="点数" type="int" defaultValue="0"/>
+</bean>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="dungeon_info_pojo">
+	<variable name="dungeon_id" fromCol="ID" type="string" />
+	<variable name="dungeon_type" fromCol="类型" type="int" defaultValue="0" />
+	<variable name="display_name" fromCol="显示名称" type="string" />
+	<variable name="enter_map" fromCol="入口地城地图" type="string" />
+	<variable name="enter_pos" fromCol="入口坐标" type="string" />
+	<variable name="def_weather" fromCol="定制天气" type="string" />
+	<variable name="add_rolestat" fromCol="附加人物属性" type="string" />
+	<variable name="win_rewards" fromCol="胜利奖励" type="string" />
+	<variable name="firstwin_extra" fromCol="胜利额外奖励" type="string" />
+</bean>
+
+	
+	

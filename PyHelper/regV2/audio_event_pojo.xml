@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="audio_event_pojo">
+	<variable name="key" fromCol="索引ID" type="string" />
+	<variable name="event_id" fromCol="事件ID" type="string" />
+	<variable name="event_tag1" fromCol="对象参数1" type="string" />
+	<variable name="event_tag2" fromCol="对象参数2" type="string" />
+	<variable name="event_tag3" fromCol="对象参数3" type="string" />
+	<variable name="priority" fromCol="优先级" type="int" defaultValue="0" />
+	<variable name="event_state" fromCol="是否关闭" type="int" defaultValue="0" />
+	<variable name="audio_info" fromCol="调用列表" type="string" />
+</bean>
+
+	
+	

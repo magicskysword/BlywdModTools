@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="bazzar_items_pojo">
+	<variable name="id" fromCol="集市道具组ID" type="string" />
+	<variable name="items" fromCol="具体道具信息" type="string" />
+	<variable name="price_ratio" fromCol="价格倍率" type="string"/>
+	<variable name="mf" fromCol="道具mf" type="string"/>
+	<variable name="mf_desc" fromCol="道具mf描述" type="string"/>
+</bean>

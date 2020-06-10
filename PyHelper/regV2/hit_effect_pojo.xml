@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bean name="hit_effect_pojo">
+	<variable name="hiteft_id" fromCol="受击特效ID" type="string" />
+	<variable name="res_file" fromCol="特效资源文件" type="string" />
+	<variable name="bind_audio" fromCol="音效ID" type="string" />
+</bean>
+
+	
+	

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<bean name="audio_info_pojo">
+	<variable name="audio_id" fromCol="音效ID" type="string" />
+	<variable name="audio_type" fromCol="音效类型" type="int" />
+	<variable name="res_dir" fromCol="所在目录或资源包" type="string" />
+	<variable name="res_file" fromCol="音效文件" type="string" />
+</bean>
+
+	
+	

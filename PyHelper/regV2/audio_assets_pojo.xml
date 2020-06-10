@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<bean name="audio_assets_pojo">
+	<variable name="audioId" fromCol="音频ID" type="string" />
+	<variable name="category" fromCol="类别" type="string" />
+	<variable name="path" fromCol="资源路径" type="string" />
+	<variable name="loop" fromCol="循环" type="int" />
+</bean>
+

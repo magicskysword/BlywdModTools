@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="monster_emitter_pojo">
+	<variable name="info_id" fromCol="发射器ID" type="string" />
+	<variable name="spawn_prob" fromCol="刷出概率" type="float" />
+	<variable name="monster_infos" fromCol="野怪池" type="string" />
+	<variable name="spawn_point" fromCol="刷出检定时间点" type="int" />
+	<variable name="spawn_condition" fromCol="刷出条件" type="string" />
+	<variable name="despawn_point" fromCol="消失检定时间点" type="int" />
+	<variable name="despawn_condition" fromCol="消失条件" type="string" />
+	<variable name="lock_time" fromCol="重刷锁定时间" type="float" />
+	<variable name="guard_radius" fromCol="守卫半径" type="float" />
+	<variable name="is_always_chase" fromCol="强制追击" type="int" />
+	<variable name="move_speed" fromCol="地图移动速度" type="float" />
+	<variable name="move_info" fromCol="地图移动信息" type="string" />
+	<variable name="news_radius" fromCol="传闻距离" type="float" />
+	<variable name="news_content" fromCol="传闻内容" type="string" />
+</bean>
+
+	

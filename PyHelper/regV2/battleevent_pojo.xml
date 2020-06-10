@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="battleevent_pojo">
+	<variable name="key" fromCol="剧情事件ID" type="string" />
+	<variable name="cmd_type" fromCol="类型" type="string" />
+	<variable name="cmd_lines" fromCol="命令内容" type="string" />
+	<variable fromCol="结果" split="\n" type="collection" >
+		<bean name="result_line" >
+			<variable name="val" fromIndex="0" type="string" />
+		</bean>
+	</variable>
+</bean>
+
+	
+	

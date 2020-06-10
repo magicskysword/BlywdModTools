@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="card_def_pojo">
+	<variable name="id" fromCol="ID" type="string" />
+	<variable name="group_id" fromCol="组ID" type="string" />
+	<variable name="show_name" fromCol="显示名" type="string" defaultValue=""/>
+	<variable name="weight" fromCol="权重" type="int" defaultValue="1"/>
+	<variable name="type" fromCol="类型" type="string"/>
+	<variable name="bindID" fromCol="绑定ID" type="string" defaultValue=""/>
+	<variable name="bindNumber" fromCol="绑定数字" type="int" defaultValue="1"/>
+	<variable name="quality" fromCol="品质" type="int" defaultValue="1"/>
+
+	<variable name="startLevel" fromCol="初始等级" type="int" defaultValue="1"/>
+	<variable name="maxLevel" fromCol="等级上限" type="int" defaultValue="30"/>
+
+	<variable name="level_info" fromCol="等级信息" type="string"/>
+	<variable name="base_recruit_cost" fromCol="基础招募费用" type="string" />
+	<variable name="loot" fromCol="掉落物资" type="string" />
+	<variable name="tagValue" fromCol="TAG" type="string"/>
+	<variable name="upgrade_info" fromCol="卡牌升阶" type="string" />
+	<variable name="class_card_pool" fromCol="所属种族卡池" type="string" defaultValue=""/>
+	<variable name="class_card_level" fromCol="种族卡池等级" type="int" defaultValue="0" />
+	<variable name="class_card_fix_pos" fromCol="种族卡池位置修正" type="int" defaultValue="0" />
+</bean>

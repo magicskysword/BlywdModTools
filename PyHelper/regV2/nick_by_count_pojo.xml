@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="nick_by_count_pojo">
+	<variable name="group_id" fromCol="类别ID" type="string" />
+	
+	<variable type="collection" foreignKey="具体.类别" foreignRef="main.类别ID">
+	<bean name="NickDetail">
+	<variable name="nick_group" fromCol="类别" type="string" />
+	<variable name="nick_id" fromCol="称号ID" type="string" />
+	<variable name="show_name" fromCol="显示名称" type="string"/>
+	<variable name="count" fromCol="计数" type="int" defaultValue="0" />
+	<variable name="desc" fromCol="描述" type="string" />
+	</bean>
+  </variable>
+</bean>
+
+	

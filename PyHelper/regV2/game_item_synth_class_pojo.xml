@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="game_item_synth_class_pojo">
+	<variable name="id" fromCol="ID" type="string" />
+	<variable name="display_name" fromCol="显示名称" type="string" />
+	<variable name="parent_class" fromCol="所属父类" type="string" />
+	<variable name="sort_index" fromCol="排序索引" type="int" defaultValue="0"/>
+	<variable name="is_hide" fromCol="是否隐藏" type="int" defaultValue="0"/>
+</bean>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="monster_info_pojo">
+	<variable name="info_id" fromCol="索引ID" type="string" />
+	<variable name="display_name" fromCol="显示名称" type="string" />
+	<variable name="index_group" fromCol="索引组" type="string" />
+	<variable name="from_lv" fromCol="自" type="int" />
+	<variable name="to_lv" fromCol="至" type="int" />
+	<variable name="respawn_time" fromCol="刷新时间" type="float" />
+	<variable name="map_model" fromCol="显示模型" type="string" />
+	<variable name="is_hide_subunit" fromCol="隐藏群组" type="int" />
+	<variable name="attitude" fromCol="关系" type="int" />
+	<variable name="encounter_cmd" fromCol="遭遇脚本" type="string" />
+	<variable name="result_cmd" fromCol="结果脚本" type="string" />
+	<variable name="roles_info" fromCol="参战人物信息" type="string" />
+	<variable name="cards_info" fromCol="参战卡牌" type="string" />
+	<variable name="rewards" fromCol="战利品" type="string" />
+	<variable name="camp_id" fromCol="所属势力" type="string" />
+	<variable name="dialog_role_id" fromCol="对话角色" type="string" />
+</bean>
+
+	

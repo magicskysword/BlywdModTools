@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="battle_field_pojo">
+	<variable name="bf_id" fromCol="ID" type="string" />
+	<variable name="bf_width" fromCol="战场长度" type="float" defaultValue="0" />
+	<variable name="bf_height" fromCol="战场宽度" type="float" defaultValue="0" />
+	<variable name="camera_height" fromCol="镜头最大高度" type="float" defaultValue="0" />
+	<variable name="layer_infos" fromCol="层级信息" type="string" />
+	<variable name="widget_infos" fromCol="装饰物" type="string" />
+</bean>
+
+	
+	

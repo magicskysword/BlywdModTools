@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="dungeon_map_pojo">
+	<variable name="map_id" fromCol="ID" type="string" />
+	<variable name="display_name" fromCol="显示名称" type="string" />
+	<variable name="map_file_id" fromCol="地图文件ID" type="string" />
+	<variable name="replace_tp" fromCol="替换传送点信息" type="string" />
+	<variable name="replace_spawn" fromCol="替换刷新单位信息" type="string" />
+	<variable name="replace_trigger" fromCol="替换触发器信息" type="string" />
+	<variable name="replace_emitter" fromCol="替换发射器信息" type="string" />
+</bean>
+
+	
+	

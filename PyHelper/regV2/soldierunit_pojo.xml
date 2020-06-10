@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="soldierunit_pojo">
+	<variable name="unit_id" fromCol="单位ID" type="string" />
+	<variable name="unit_name" fromCol="显示名称" type="string" />
+	<variable name="unit_star" fromCol="显示星级" type="int" defaultValue="0"/>
+	<variable name="level" fromCol="等级" type="int" defaultValue="1"/>
+	<variable name="unit_type" fromCol="类型" type="string" />
+	<variable name="weapon" fromCol="武器" type="int" defaultValue="0" />
+	<variable name="attack_type" fromCol="攻击类型" type="int" defaultValue="0" />
+	<variable name="weapon_speed" fromCol="基础攻速" type="float" />
+	<variable name="is_recruit" fromCol="可招募" type="int" />
+	<variable name="cap_prob" fromCol="捕捉概率" type="float" />
+	<variable name="model_id" fromCol="单位模型" type="string" />
+	<variable name="model_act" fromCol="模型动作" type="string" />
+	<variable name="replace_info" fromCol="替换模型" type="string" />
+	<variable name="skill_list" fromCol="技能表" type="string" />
+	<variable name="armor_type" fromCol="护甲" type="int" defaultValue="0"/>
+	<variable name="distrib_tpt" fromCol="配点模板" type="string" />
+	<variable name="base_stat" fromCol="固有属性" type="string" />
+	<variable name="head_image" fromCol="单位头像" type="string" />
+	<variable name="ctrl_cost" fromCol="所需统御度" type="int" defaultValue="5"/>
+	<variable name="salary" fromCol="工资" type="int" defaultValue="5"/>
+	<variable name="upgrade_list" fromCol="可升级单位" type="string" />
+	<variable name="original_camp" fromCol="初始势力" type="string" />
+	<variable name="recruit_cost" fromCol="招募基础价格" type="string" />
+	<variable name="loot" fromCol="掉落" type="string" />
+	<variable name="score_base" fromCol="战斗力评分基数" type="int" defaultValue="0"/>
+	<variable name="remote_eft" fromCol="远程特效" type="string" />
+	<variable name="dungeon_skill" fromCol="地城技能" type="string" />
+</bean>
+
+	
+	

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bean name="construction_pojo">
+	<variable name="project_id" fromCol="项目ID" type="string" />
+	<variable name="group_id" fromCol="组ID" type="string" />
+	<variable name="open_conditions" fromCol="开启条件" type="string" />
+	<variable name="base_costtime" fromCol="耗费时间基数" type="float" defaultValue= "0"/>
+	<variable name="ai_weight" fromCol="AI概率权值" type="float" defaultValue= "0"/>
+	<variable name="resource_list" fromCol="所需资源基数" type="string" />
+	<variable name="exec_name_str" fromCol="项目执行文字" type="string" />
+	<variable name="bind_building" fromCol="绑定建筑" type="string" />
+	<variable name="project_info" fromCol="项目描述" type="string" />
+	<variable name="progress_str" fromCol="进行中文字" type="string" />
+	<variable name="complete_str" fromCol="完成文字" type="string" />
+	<variable name="cmd_lines" fromCol="完成执行命令" type="string" />
+</bean>
+

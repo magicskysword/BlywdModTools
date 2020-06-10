@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="level_factor_pojo">
+	<variable name="level" fromCol="等级" type="int" />
+	<variable name="hero_levelup_exp" fromCol="英雄升级所需经验" type="int" />
+	<variable name="skill_levelup_exp" fromCol="技能升级所需经验" type="int" />
+	<variable name="soldier_levelup_exp" fromCol="兵种升级所需经验" type="int" />
+	<variable name="enemy_exp" fromCol="单个敌人经验" type="int" />
+	<variable name="base_hp" fromCol="自身标准血量" type="int" />
+	<variable name="hero_base_hp" fromCol="英雄基础血量" type="int" />
+	<variable name="base_attack" fromCol="自身标准攻击力" type="int" />
+	<variable name="hero_base_attack" fromCol="英雄基础攻击力" type="int" />
+	<variable name="skill_base_attack" fromCol="技能标准攻击力" type="int" />
+	<variable name="base_mp" fromCol="自身标准气力" type="int" />
+	<variable name="base_defence" fromCol="自身标准防御" type="int" />
+	<variable name="base_magicAtk" fromCol="自身标准魔法攻击" type="int" />
+	<variable name="hero_base_magicAtk" fromCol="英雄基础魔法攻击力" type="int" />
+	<variable name="skill_base_magicAtk" fromCol="技能标准魔法攻击" type="int" />
+	<variable name="base_magicDef" fromCol="自身标准魔法防御" type="int" />
+</bean>
+
+	
+	

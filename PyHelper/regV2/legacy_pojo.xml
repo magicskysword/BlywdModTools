@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="legacy_pojo">
+	<variable name="legacy_id" fromCol="传承ID" type="string" />
+	<variable name="show_name" fromCol="显示名称" type="string" />
+	<variable name="type" fromCol="类型" type="int" />
+	<variable name="cost_point" fromCol="消耗点数" type="int" defaultValue="0" />
+	<variable name="max_level" fromCol="叠加上限" type="string" defaultValue="1" />
+	<variable name="command" fromCol="命令内容" type="string" />
+	<variable name="desc" fromCol="描述" type="string" />
+	<variable name="icon" fromCol="图标" type="string" />
+	<variable name="condition" fromCol="条件" type="string" />
+	<variable name="enable" fromCol="启用" type="int" />
+</bean>
+

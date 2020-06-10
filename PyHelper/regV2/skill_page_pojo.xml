@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="skill_page_pojo">
+	<variable name="page_id" fromCol="技能页ID" type="string" />
+	<variable name="display_name" fromCol="显示名称" type="string" />
+	<variable name="tree_info" fromCol="技能树" type="string" />
+	<variable name="res_name" fromCol="资源名称" type="string" />
+</bean>
+
+	
+	

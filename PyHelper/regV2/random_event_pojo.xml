@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="RandomEventPojo">
+	<variable name="id" fromCol="ID" type="string" />
+	<variable name="type" fromCol="类别" type="string" />
+	<variable name="name" fromCol="显示名称" type="string"/>
+	<variable name="desc" fromCol="描述" type="string"/>
+	<variable name="condition" fromCol="开放条件" type="string"/>
+	<variable name="cmd_template" fromCol="触发指令模板" type="string"/>
+	<variable name="day_limit" fromCol="时间限制" type="int" defaultValue="15"/>
+	<variable name="auto_end_hint" fromCol="自动结束提示" type="string"/>
+
+  <variable type="collection" foreignKey="事件参数池.随机事件ID" foreignRef="随机事件.ID">
+	<bean name="RandomEventArgvs">
+	  <variable name="id" fromCol="随机事件ID" type="string" />
+	  <variable name="argvs" fromCol="参数" type="string" />
+	</bean>
+  </variable>
+
+</bean>

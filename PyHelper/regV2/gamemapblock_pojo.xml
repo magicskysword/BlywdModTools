@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="gamemapblock_pojo">
+	<variable name="block_id" fromCol="block_id" type="string" />
+	<variable name="display_name" fromCol="display_name" type="string" />
+	<variable name="shape" fromCol="底图" type="string" />
+	<variable name="largemap_pos" fromCol="largemap_pos" type="string" />
+	<variable name="is_hide" fromCol="is_hide" type="int" defaultValue="0" />
+</bean>
+
+	
+	

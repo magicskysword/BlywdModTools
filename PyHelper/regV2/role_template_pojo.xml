@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="role_template_pojo">
+	<variable name="role_id" fromCol="人物ID" type="string" />
+	<variable name="display_name" fromCol="显示名称" type="string" />
+	<variable name="role_type" fromCol="类型" type="string" />
+	<variable name="role_tag" fromCol="人物标记" type="string" />
+	<variable name="is_recruit" fromCol="可否招募" type="int" defaultValue="0" />
+	<variable name="can_not_leave" fromCol="不可离队" type="int" defaultValue="0" />
+	<variable name="is_female" fromCol="男女" type="int" defaultValue="0" />
+	<variable name="def_level" fromCol="初始等级" type="int" defaultValue="0" />
+	<variable name="use_weapon" fromCol="武器" type="int" defaultValue="0" />
+	<variable name="model_group" fromCol="模型组" type="string" />
+	<variable name="star" fromCol="星级" type="int" defaultValue="1"/>
+	<variable name="init_statu" fromCol="初始属性" type="string" />
+	<variable name="init_skills" fromCol="技能表" type="string" />
+	<variable name="skill_pages" fromCol="升级技能页" type="string" />
+	<variable name="init_equips" fromCol="初始装备" type="string" />
+	<variable name="init_fame" fromCol="初始名望" type="int" defaultValue="0" />
+	<variable name="init_active_state" fromCol="初始活跃" type="int" defaultValue="0" />
+	<variable name="role_img" fromCol="人物形象" type="string" />
+	<variable name="init_loyal" fromCol="忠诚度" type="int" defaultValue="0" />
+	<variable name="init_exploit" fromCol="功勋值" type="int" defaultValue="0" />
+	<variable name="role_charactor" fromCol="性格" type="string" />
+	<variable name="init_pos" fromCol="初始位置" type="string" />
+	<variable name="recruit_cost_val" fromCol="招募价格" type="string"/>
+	<variable name="showup_area" fromCol="在野活动范围" type="string" />
+	<variable name="wordsStr" fromCol="对话" type="string" />
+	<variable name="learn_list" fromCol="指点" type="string" />
+	<variable name="quest" fromCol="委托" type="string" />
+	<variable name="tagValue" fromCol="TAG" type="string" defaultValue=""/>
+	<variable name="relation_factor" fromCol="关系影响因子" type="string" defaultValue=""/>
+</bean>

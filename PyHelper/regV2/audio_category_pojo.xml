@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<bean name="audio_category_pojo">
+	<variable name="categoryId" fromCol="分类ID" type="string" />
+	<variable name="volume" fromCol="音量" type="float" />
+	<variable name="audioObjectOverride" fromCol="重载对象" type="string" />
+	<variable name="audioMixerGroup" fromCol="混声器" type="string" />
+	<variable name="parentCategory" fromCol="父类" type="string" />
+</bean>

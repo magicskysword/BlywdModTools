@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="game_item_pojo">
+	<variable name="item_id" fromCol="道具ID" type="string" />
+	<variable name="item_name" fromCol="显示名称" type="string" />
+	<variable name="item_type" fromCol="物品类型" type="int" defaultValue="0"/>
+	<variable name="sub_type" fromCol="子类型" type="int" defaultValue="0"/>
+	<variable name="equip_type" fromCol="装备类别" type="int" defaultValue="0"/>
+	<variable name="attack_type" fromCol="攻击类型" type="int" defaultValue="0"/>
+	<variable name="use_type" fromCol="使用类型" type="int" defaultValue="0"/>
+	<variable name="group_num" fromCol="堆叠数量" type="int" defaultValue="0"/>
+	<variable name="item_level" fromCol="物品等级" type="int" defaultValue="0"/>
+	<variable name="base_price" fromCol="基础价格" type="int" defaultValue="0"/>
+	<variable name="base_durability" fromCol="基础耐久度" type="int" defaultValue="-1"/>
+	<variable name="per_fix_cost" fromCol="修复一点耐久消耗" type="string" defaultValue=""/>
+	<variable name="base_fresh_day" fromCol="基础保存天数" type="int" defaultValue="-1"/>
+	<variable name="words_prob" fromCol="出词条概率" type="float" defaultValue="0"/>
+	<variable name="item_icon" fromCol="图标" type="string" />
+	<variable name="require_info" fromCol="需求" type="string" />
+	<variable name="weapon_speed" fromCol="武器速度" type="float" defaultValue="0"/>
+	<variable name="effect_info" fromCol="基础效果" type="string" />
+	<variable name="ext_effect_info" fromCol="扩展效果" type="string" />
+	<variable name="describ_info" fromCol="道具描述" type="string" />
+	<variable name="tex_info" fromCol="模型信息" type="string" />
+	<variable name="remote_eft" fromCol="远程特效" type="string" />
+	<variable name="tag" fromCol="TAG" type="string" />
+</bean>
+
+	
+	

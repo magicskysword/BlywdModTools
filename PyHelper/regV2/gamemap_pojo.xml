@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="gamemap_pojo">
+	<variable name="map_id" fromCol="map_id" type="string" />
+	<variable name="display_name" fromCol="display_name" type="string" />
+	<variable name="map_file_name" fromCol="map_file_name" type="string" />
+	<variable name="bgm" fromCol="背景音乐" type="string" />
+	<variable name="block_id" fromCol="所属区块" type="string" />
+	<variable name="explore_mode" fromCol="探索模式" type="int" defaultValue="0" />
+	<variable name="camera_size" fromCol="镜头大小" type="int" defaultValue="0" />
+	<variable name="map_type" fromCol="map_type" type="string"/>
+	<variable name="explore_map_info" fromCol="探索地图信息" type="string"/>
+	<variable name="map_icon" fromCol="map_icon" type="string" />
+	<variable name="is_hide" fromCol="is_hide" type="int" />
+</bean>
+
+	
+	

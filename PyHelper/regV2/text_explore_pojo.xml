@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="text_explore_pojo">
+	<variable name="id" fromCol="ID" type="string" />
+	<variable name="mapType" fromCol="地图类型" type="string" />
+	<variable name="backgroundCG" fromCol="背景CG" type="string" defaultValue=""/>
+	<variable name="bgm" fromCol="背景音乐" type="string" defaultValue=""/>
+	<variable name="cost" fromCol="探索成本" type="string"/>
+	<variable name="cd" fromCol="探索冷却" type="int" defaultValue="0"/>
+	<variable name="lv" fromCol="推荐等级" type="int" defaultValue="1"/>
+	<variable name="timeCost" fromCol="探索耗时" type="float"/>
+	<variable name="timeRatio" fromCol="时间倍率" type="float" defaultValue="10"/>
+	<variable name="douzhiRatio" fromCol="斗志消耗倍率" type="float" defaultValue="1"/>
+	<variable name="blockCount" fromCol="关卡长度" type="int" defaultValue="1"/>
+	<variable name="enemyDensity" fromCol="敌人密度" type="int" defaultValue="50"/>
+	<variable name="eventPool" fromCol="事件池" type="string"/>
+	<variable name="cmdStr" fromCol="描述与指令" type="string"/>
+	<variable name="cmdPic" fromCol="描述配图" type="string"/>
+	<variable name="battleUnitInfo" fromCol="战斗单位信息" type="string"/>
+	<variable name="bossMapInfo" fromCol="终点地图信息" type="string" />
+	<variable name="bossMapDummy" fromCol="终点地图假人" type="string"/>
+	<variable name="battleInfo" fromCol="战斗信息" type="string" />
+	<variable name="lootInfo" fromCol="掉落信息" type="string" />
+</bean>

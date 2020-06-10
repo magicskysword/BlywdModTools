@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="chest_info_pojo">
+	<variable name="info_id" fromCol="宝箱信息ID" type="string" />
+	<variable name="map_model" fromCol="普通状态模型" type="string" />
+	<variable name="map_model_open" fromCol="开启状态模型" type="string" />
+	<variable name="eft_info" fromCol="普通状态特效" type="string" />
+	<variable name="op_icon" fromCol="交互图标" type="string" />
+	<variable name="tip_item_icon" fromCol="提示道具图标" type="string" />
+	<variable name="map_mark_icon" fromCol="地图标记图标" type="string" />
+	<variable name="appear_condition" fromCol="出现条件" type="string" />
+	<variable name="unlimited_open_time" fromCol="无限开启" type="int" defaultValue="0"/>
+	<variable name="open_times" fromCol="可开启次数" type="int" defaultValue="1" />
+	<variable name="spawn_type" fromCol="刷新方式" type="int" defaultValue="0"/>
+	<variable name="respawn_time" fromCol="刷新时间" type="float" defaultValue="30"/>
+	<variable name="decay_time" fromCol="损毁时间" type="float" defaultValue="-1"/>
+	<variable name="desc" fromCol="宝箱基础描述" type="string" />
+	<variable name="open_condition" fromCol="开启条件" type="string" />
+	<variable name="open_failed_cmd" fromCol="开启失败脚本" type="string" />
+	<variable name="cd_failed_cmd" fromCol="还未刷新脚本" type="string" />
+	<variable name="guard_info" fromCol="守卫信息提示" type="string" />
+	<variable name="guard_list" fromCol="守卫列表" type="string" />
+	<variable name="open_cost_time" fromCol="开启用时" type="float" defaultValue="3"/>
+	<variable name="open_cost_mat" fromCol="消耗物品列表" type="string" />
+	<variable name="open_cost_mat_hint" fromCol="玩家消耗物品提示" type="string" />
+	<variable name="bonus_list" fromCol="获取物品列表" type="string" />
+	<variable name="food_cost" fromCol="开启消耗饱食度" type="int" defaultValue="0"/>
+	<variable name="player_open_cmd" fromCol="玩家成功脚本" type="string" />
+	<variable name="post_open" fromCol="开启后处理方式" type="int" defaultValue="0"/>
+</bean>

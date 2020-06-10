@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="mapplugin_pojo">
+	<variable name="plugin_id" fromCol="插件ID" type="string" />
+	<variable name="tag_map" fromCol="目标地图" type="string" />
+	<variable name="file_name" fromCol="文件名" type="string" />
+</bean>
+
+	
+	

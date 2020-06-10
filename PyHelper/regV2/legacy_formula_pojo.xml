@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="legacy_formula_pojo">
+	<variable name="legacy_formula_id" fromCol="公式ID" type="string" />
+	<variable name="show_name" fromCol="显示名称" type="string" />
+	<variable name="formula" fromCol="公式" type="string" />
+	<variable name="noMaxLimit" fromCol="无数值限制" type="int" defaultValue="0" />
+	<variable name="max" fromCol="上限" type="string" defaultValue="0" />
+	<variable name="detail" fromCol="游戏中解释" type="string" />
+</bean>
+

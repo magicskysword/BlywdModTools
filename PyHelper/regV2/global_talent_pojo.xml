@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="global_talent_pojo">
+	<variable name="talent_id" fromCol="天赋ID" type="string" />
+	<variable name="talent_name" fromCol="显示名称" type="string" />
+	<variable name="talent_type" fromCol="类型" type="int" />
+	<variable name="pre_talents" fromCol="前置天赋" type="string" />
+	<variable name="mutex_talents" fromCol="互斥天赋" type="string" />
+	<variable name="talent_effect" fromCol="效果" type="string" />
+	<variable name="talent_desc" fromCol="描述" type="string" />
+	<variable name="talent_icon" fromCol="图标" type="string" />
+	<variable name="talent_frame" fromCol="边框" type="string" />
+	<variable name="talent_pos" fromCol="树形图坐标" type="string" />
+	<variable name="talent_tag" fromCol="TAG" type="string" />
+</bean>
+
+	
+	

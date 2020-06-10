@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="battle_effect_pojo">
+	<variable name="eft_id" fromCol="ID" type="string" />
+	<variable name="animat_type" fromCol="动画类型" type="int" defaultValue="0"/>
+	<variable name="eft_info" fromCol="特效信息" type="string" />
+	<variable name="shadow_obj" fromCol="阴影特效" type="string" />
+	<variable name="eft_time" fromCol="时间参数" type="float" defaultValue="0" />
+	<variable name="dir_type" fromCol="方向" type="int" defaultValue="0" />
+	<variable name="move_speed" fromCol="速度" type="float" defaultValue="0" />
+	<variable name="gravity_args" fromCol="重力参数" type="string" />
+	<variable name="ignore_tv" fromCol="无视地形碰撞" type="int" defaultValue="0"/>
+	<variable name="fadin_time" fromCol="淡入" type="float" defaultValue="0" />
+	<variable name="fadout_time" fromCol="淡出" type="float" defaultValue="0" />
+	<variable name="eft_config" fromCol="特效配置" type="string"/>
+	<variable name="eft_scale" fromCol="比例" type="string" />
+	<variable name="dmg_formula" fromCol="附带伤害" type="string" />
+	<variable name="dmg_check_times" fromCol="伤检判定" type="int" defaultValue="0" />
+	<variable name="dmg_tag_type" fromCol="伤检对象" type="int" defaultValue="0" />
+	<variable name="dmg_check_args" fromCol="伤检参数" type="string" />
+	<variable name="start_check_delay" fromCol="伤检延迟" type="float" defaultValue="0" />
+	<variable name="dmg_check_interval" fromCol="伤检间隔" type="float" defaultValue="0" />
+	<variable name="check_threshold" fromCol="响应阈" type="float" defaultValue="0" />
+	<variable name="check_once_arg" fromCol="重复判定" type="string"/>
+	<variable name="collide_mode" fromCol="碰撞终结" type="int" defaultValue="0" />
+	<variable name="offset_z" fromCol="Z偏移" type="float" defaultValue="0" />
+	<variable name="cmds_on_next" fromCol="结束命令" type="string" />
+</bean>
+
+	
+	

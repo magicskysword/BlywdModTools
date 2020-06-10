@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bean name="place_pojo">
+	<variable name="place_id" fromCol="地点ID" type="string" />
+	<variable name="display_name" fromCol="显示名称" type="string" />
+	<variable name="is_template" fromCol="是否模板" type="int" defaultValue="0" />
+	<variable name="place_type" fromCol="类型" type="string" />
+	<variable name="belong_to" fromCol="附属与" type="string" />
+	<variable name="model_view" fromCol="外观模型" type="string" />
+	<variable name="bind_project" fromCol="绑定项目" type="string" />
+	<variable name="buildings" fromCol="内部设施" type="string" />
+	<variable name="construction_list" fromCol="可建设设施组" type="string" defaultValue=""/>
+	<variable name="function_event_mapping" fromCol="指令事件映射表" type="string" />
+	<variable name="place_size" fromCol="规模" type="int" defaultValue="0" />
+	<variable name="def_prosp" fromCol="基础繁荣度" type="int" defaultValue="0" />
+	<variable name="def_defend" fromCol="基础城防" type="int" defaultValue="0" />
+	<variable name="def_state" fromCol="默认状态" type="int" defaultValue="0" />
+	<variable name="largemap_pos" fromCol="大地图坐标" type="string" />
+	<variable name="hide_on_largemap" fromCol="大地图隐藏" type="int" defaultValue="0" />
+	<variable name="init_soldier_cards_info" fromCol="初始守军" type="string" />
+	<variable name="battle_map" fromCol="战场地图" type="string" />
+	<variable name="base_stat" fromCol="基础状态" type="string" />
+	<variable name="tags_info" fromCol="Tags" type="string" />
+	<variable name="init_custom_vals" fromCol="初始自定义字段值" type="string" />
+</bean>
